@@ -1,18 +1,27 @@
 export const tools = [
   {
     name: "Cursor",
-    plans: ["Hobby", "Pro", "Business", "Enterprise"],
+    recommendation:
+      "Consider downgrading unused enterprise seats or switching smaller teams to Pro.",
   },
   {
     name: "GitHub Copilot",
-    plans: ["Individual", "Business", "Enterprise"],
+    recommendation:
+      "Business plans may be unnecessary for very small teams.",
   },
   {
     name: "Claude",
-    plans: ["Free", "Pro", "Max", "Team", "Enterprise", "API direct"],
+    recommendation:
+      "Claude Pro is often enough unless your team heavily uses API workloads.",
   },
   {
     name: "ChatGPT",
-    plans: ["Plus", "Team", "Enterprise", "API direct"],
+    recommendation:
+      "ChatGPT Team can become expensive for small startups compared to API usage.",
+  },
+  {
+    name: "Gemini",
+    recommendation:
+      "Gemini API pricing may reduce research-related costs.",
   },
 ];
