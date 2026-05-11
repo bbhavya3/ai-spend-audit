@@ -6,82 +6,71 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-black text-white overflow-hidden">
-        <section className="relative px-6 pt-28 pb-20">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.25),transparent_45%)]" />
+      <main className="min-h-screen bg-[#050507] text-white">
+        <section className="px-6 pt-36 pb-20">
+          <div className="mx-auto max-w-6xl text-center">
+            <p className="mx-auto w-fit rounded-full border border-violet-500/30 bg-violet-500/10 px-5 py-2 text-sm font-medium text-violet-300">
+              Free AI spend audit for startups
+            </p>
 
-          <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-300">
-              AI Cost Audit For Startups
-            </div>
-
-            <h1 className="mt-8 text-6xl md:text-7xl font-bold tracking-tight leading-tight">
-              Stop Overpaying
-              <br />
-              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
-                For AI Tools
+            <h1 className="mt-8 text-5xl font-bold tracking-tight md:text-7xl">
+              Stop Overpaying For
+              <span className="block bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">
+                AI Tools
               </span>
             </h1>
 
-            <p className="mt-8 text-zinc-400 text-xl max-w-3xl mx-auto leading-9">
-              Discover wasted AI spending, cheaper alternatives,
-              and optimization opportunities for your startup in seconds.
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
+              Find wasted spend across ChatGPT, Claude, Cursor, Copilot,
+              Gemini, and more. Get instant savings recommendations without
+              login.
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="bg-gradient-to-r from-violet-600 to-fuchsia-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:opacity-90 transition">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a
+                href="#audit"
+                className="rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 px-8 py-4 text-lg font-semibold shadow-lg shadow-violet-900/30"
+              >
                 Start Free Audit
-              </button>
+              </a>
 
-              <button className="border border-zinc-700 px-8 py-4 rounded-2xl text-lg hover:bg-zinc-900 transition">
-                View Example
-              </button>
+              <a
+                href="#features"
+                className="rounded-2xl border border-zinc-700 px-8 py-4 text-lg font-semibold text-zinc-300 hover:bg-zinc-900"
+              >
+                See Features
+              </a>
             </div>
-
-            <p className="mt-5 text-zinc-500">
-              No signup required • Instant results • Free forever
-            </p>
           </div>
         </section>
 
-        <section className="px-6 pb-24">
-          <div className="max-w-6xl mx-auto">
-            <AuditForm />
-          </div>
+        <section id="audit" className="px-6 pb-20">
+          <AuditForm />
         </section>
 
-        <section className="px-6 pb-24">
-          <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-              <h3 className="text-2xl font-bold">
-                Instant Savings
-              </h3>
-
-              <p className="text-zinc-400 mt-4 leading-7">
-                Identify overspending across ChatGPT, Claude,
-                Cursor, Gemini, and more.
+        <section id="features" className="px-6 pb-24">
+          <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-8">
+              <h3 className="text-2xl font-bold">Instant audit</h3>
+              <p className="mt-4 leading-7 text-zinc-400">
+                Enter spend, seats, and use case to see monthly and annual
+                savings immediately.
               </p>
             </div>
 
-            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-              <h3 className="text-2xl font-bold">
-                Smart Recommendations
-              </h3>
-
-              <p className="text-zinc-400 mt-4 leading-7">
-                Get actionable suggestions for cheaper plans
-                and optimized AI usage.
+            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-8">
+              <h3 className="text-2xl font-bold">Clear recommendations</h3>
+              <p className="mt-4 leading-7 text-zinc-400">
+                Shows whether to downgrade, switch plans, or optimize AI tool
+                usage.
               </p>
             </div>
 
-            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-              <h3 className="text-2xl font-bold">
-                Startup Focused
-              </h3>
-
-              <p className="text-zinc-400 mt-4 leading-7">
-                Built specifically for startup founders,
-                developers, and AI-first teams.
+            <div className="rounded-3xl border border-white/10 bg-zinc-900/70 p-8">
+              <h3 className="text-2xl font-bold">Credex lead flow</h3>
+              <p className="mt-4 leading-7 text-zinc-400">
+                High-savings users can be guided toward discounted AI
+                infrastructure credits.
               </p>
             </div>
           </div>
