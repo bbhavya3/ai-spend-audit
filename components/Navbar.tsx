@@ -18,12 +18,9 @@ export default function Navbar() {
           </a>
         </div>
 
-        <a
-          href="#audit"
-          className="rounded-xl bg-white px-5 py-2 text-sm font-semibold text-black hover:bg-zinc-200"
-        >
-          Start Audit
-        </a>
+        <div className="text-sm text-zinc-500">
+        AI Cost Intelligence
+        </div>
       </nav>
     </header>
   );
