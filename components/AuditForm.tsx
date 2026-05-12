@@ -93,13 +93,33 @@ export default function AuditForm() {
     );
   }, [tool, plan, spend, seats, useCase, email, showResults]);
 
-  function handleCalculate() {
+  async function handleCalculate() {
     if (!tool || !plan || !spend || !seats || !useCase) {
       alert("Please select tool, plan, spend, seats, and use case.");
       return;
     }
 
     setShowResults(true);
+
+    try {
+      const { supabase } = await import("@/lib/supabase");
+
+      await supabase.from("audits").insert([
+        {
+          tool,
+          plan,
+          spend,
+          seats,
+          use_case: useCase,
+          monthly_savings: monthlySavings.toFixed(2),
+          yearly_savings: yearlySavings.toFixed(2),
+        },
+      ]);
+
+      console.log("Audit saved successfully");
+    } catch (error) {
+      console.log("Supabase save error:", error);
+    }
   }
 
   function handleReset() {

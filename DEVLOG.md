@@ -1,26 +1,22 @@
-## Day 1 — 2026-05-09
+# DEVLOG
 
-**Hours worked:** 4
+## Day 1
+Researched AI SaaS cost optimization workflows and competitor products.
 
-**What I did:**  
-- Set up Next.js project with Tailwind CSS
-- Built landing page UI
-- Added navbar and audit form
-- Added savings calculation logic
-- Added tool recommendations
-- Implemented localStorage persistence
-- Connected project to GitHub
+## Day 2
+Designed initial landing page and audit form UI using Next.js and Tailwind CSS.
 
-**What I learned:**  
-- How to use Next.js App Router
-- React state management with useState
-- Persisting form data using localStorage
+## Day 3
+Implemented audit calculations, pricing logic, and recommendation engine.
 
-**Blockers / what I'm stuck on:**  
-- Understanding deployment and backend integration
+## Day 4
+Added AI-generated summaries, email capture flow, and responsive design improvements.
 
-**Plan for tomorrow:**  
-- Add email capture
-- Improve audit logic
-- Deploy project to Vercel
-- Create documentation files
+## Day 5
+Integrated Supabase backend storage and public shareable report pages.
+
+## Day 6
+Improved user experience, reset functionality, and report sharing workflow.
+
+## Day 7
+Performed testing, deployment preparation, documentation cleanup, and final polishing.
